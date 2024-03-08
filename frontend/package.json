@@ -1,0 +1,16 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Description of your frontend application",
+    "main": "app.js", // or whatever your entry point is
+    "scripts": {
+      "start": "node app.js", // Command to start the frontend server
+      "build": "webpack" // Command to build the frontend assets (e.g., with webpack)
+    },
+    "dependencies": {
+      // Frontend dependencies (e.g., React, Vue.js, etc.)
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    }
+  }
+  

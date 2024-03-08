@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Description of your backend application",
+  "main": "server.js", // or whatever your entry point is
+  "scripts": {
+    "start": "node server.js", // Command to start the backend server
+    "build": "babel src -d dist" // Example command for transpiling with Babel (if using ES6+)
+  },
+  "dependencies": {
+    // Backend dependencies (e.g., Express.js, etc.)
+    "express": "^4.17.1"
+  }
+}

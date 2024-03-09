@@ -5,21 +5,24 @@ FROM node:14 AS builder
 WORKDIR /app/backend
 
 # Copy the backend files into the container
-COPY ./backend/package*.json ./
-COPY ./backend/ ./
+COPY backend/package*.json ./
+COPY backend/ ./
 
 # Install backend dependencies
 RUN npm install
 
-# Build the backend
-RUN npm run build
+# Install Babel and necessary presets/plugins
+RUN npm install @babel/core @babel/cli @babel/preset-env
+
+# Build the backend using Babel
+RUN npx babel src -d dist
 
 # Set the working directory for the frontend
 WORKDIR /app/frontend
 
 # Copy the frontend files into the container
-COPY ./frontend/package*.json ./
-COPY ./frontend/ ./
+COPY frontend/package*.json ./
+COPY frontend/ ./
 
 # Install frontend dependencies
 RUN npm install
@@ -30,7 +33,7 @@ RUN npm run build
 # Expose backend port
 EXPOSE 5000
 
-# Set the working directory for the backend
+# Set the working directory to the backend
 WORKDIR /app/backend
 
 # Set the command to start the backend server

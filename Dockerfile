@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set working directory
-WORKDIR /frontend/
+# WORKDIR /frontend/
 
 # Copy package.json and package-lock.json
 COPY package*.json ./

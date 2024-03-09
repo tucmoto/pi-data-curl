@@ -4,8 +4,13 @@
     "description": "Description of your frontend application",
     "main": "app.js", 
     "scripts": {
+<<<<<<< HEAD
+      "start": "node app.js",
+      "build": "webpack" 
+=======
       "start": "node app.js", 
       "build": "webpack" 
+>>>>>>> a09e67d7efc7e2b3f0f10531a1f6b68530b8b2de
     },
     "dependencies": {
       "react": "^17.0.2",

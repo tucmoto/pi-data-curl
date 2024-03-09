@@ -4,8 +4,13 @@
   "description": "Description of your backend application",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
+    "start": "node server.js",
+    "build": "babel src -d dist" 
+=======
     "start": "node server.js",
     "build": "babel src -d dist"
+>>>>>>> a09e67d7efc7e2b3f0f10531a1f6b68530b8b2de
   },
   "dependencies": {
      "express": "^4.17.1"

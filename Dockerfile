@@ -14,8 +14,8 @@ RUN npm install
 # Install Babel and necessary presets/plugins
 RUN npm install @babel/core @babel/cli @babel/preset-env
 
-# Build the backend using Babel
-RUN npx babel . -d dist
+# Build the backend using Babel, excluding node_modules
+RUN npx babel . -d dist --ignore "node_modules"
 
 # Set the working directory for the frontend
 WORKDIR /app/frontend

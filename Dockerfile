@@ -38,3 +38,4 @@ WORKDIR /app/backend
 
 # Set the command to start the backend server
 CMD ["node", "server.js"]
+

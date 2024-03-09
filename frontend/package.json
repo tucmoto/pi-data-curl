@@ -5,7 +5,7 @@
     "main": "app.js", 
     "scripts": {
       "start": "node app.js",
-      "build": "webpack app.js --output dist/bundle.js"
+      "build": "webpack"
     },
     "dependencies": {
       "react": "^17.0.2",

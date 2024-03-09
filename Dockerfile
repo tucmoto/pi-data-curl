@@ -27,6 +27,9 @@ COPY frontend/ ./
 # Install frontend dependencies
 RUN npm install
 
+# Install webpack globally
+RUN npm install -g webpack webpack-cli
+
 # Build the frontend
 RUN npm run build
 

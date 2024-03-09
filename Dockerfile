@@ -15,7 +15,7 @@ RUN npm install
 RUN npm install @babel/core @babel/cli @babel/preset-env
 
 # Build the backend using Babel
-RUN npx babel src -d dist
+RUN npx babel . -d dist
 
 # Set the working directory for the frontend
 WORKDIR /app/frontend
@@ -38,4 +38,3 @@ WORKDIR /app/backend
 
 # Set the command to start the backend server
 CMD ["node", "server.js"]
-
